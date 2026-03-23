@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="treinos"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edittext_titulotreino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="digite o título do treino"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edittext_descricaotreino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="digite a descrição do treino"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+
+
+
+    <Button
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/button_cadastrar_treino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cadastrar"
+        android:layout_margin="20dp"/>
+    <Button
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="#228B22"
+        android:id="@+id/button_listtipos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecionar Treino"
+        android:layout_margin="20dp"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Tornar treino publico!" />
+
+    <TextClock
+        android:textSize="40dp"
+        android:layout_margin="20dp"
+        android:id="@+id/textClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+

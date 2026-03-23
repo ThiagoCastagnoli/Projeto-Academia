@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/loginFramgment">
+
+    <fragment
+        tools:layout="@layout/fragment_login"
+        android:id="@+id/loginFramgment"
+        android:name="com.example.myapplication.Fragments.LoginFramgment"
+        android:label="LoginFramgment" >
+        <action
+            android:id="@+id/action_loginFramgment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+        <action
+            android:id="@+id/action_loginFramgment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_cadastro"
+        android:id="@+id/cadastroFragment"
+        android:name="com.example.myapplication.Fragments.CadastroFragment"
+        android:label="CadastroFragment" >
+        <action
+            android:id="@+id/action_cadastroFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_homepage"
+        android:id="@+id/homepageFragment"
+        android:name="com.example.myapplication.Fragments.HomepageFragment"
+        android:label="HomepageFragment" >
+        <action
+            android:id="@+id/action_homepageFragment_to_cadastrarTreinoFragment"
+            app:destination="@id/cadastrarTreinoFragment" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <argument
+            android:name="authKey"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_cadastro_treino"
+        android:id="@+id/cadastrarTreinoFragment"
+        android:name="com.example.myapplication.Fragments.CadastrarTreinoFragment"
+        android:label="CadastrarTreinoFragment" >
+        <action
+            android:id="@+id/action_cadastrarTreinoFragment_to_tiposFragment"
+            app:destination="@id/tiposFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_tipos"
+        android:id="@+id/tiposFragment"
+        android:name="com.example.myapplication.Fragments.TiposFragment"
+        android:label="TiposFragment" />
+
+</navigation>
