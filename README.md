@@ -1,1 +1,1 @@
-# Projeto1
+Aplicativo Android em Kotlin para treinos físicos, com autenticação via API (login e cadastro). Conta com listagem dinâmica usando RecyclerView, navegação entre telas e interface intuitiva. Projeto desenvolvido aplicando boas práticas e arquitetura moderna.
