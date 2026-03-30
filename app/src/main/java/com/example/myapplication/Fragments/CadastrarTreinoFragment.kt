@@ -29,7 +29,6 @@ class CadastrarTreinoFragment: Fragment(R.layout.fragment_cadastro_treino) {
         val titulo = view.findViewById<EditText>(R.id.edittext_titulotreino)
         val descricaotreino = view.findViewById<EditText>(R.id.edittext_descricaotreino)
         val buttonCadastroTreino = view.findViewById<Button>(R.id.button_cadastrar_treino)
-        val datatreino = view.findViewById<TextClock>(R.id.textClock)
         val userpredsId = prefs.getInt(PrefsKey.userid, -999)
         val buttonSelecionarTreino = view.findViewById<Button>(R.id.button_listtipos)
 

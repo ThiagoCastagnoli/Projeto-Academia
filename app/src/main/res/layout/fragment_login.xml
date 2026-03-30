@@ -3,15 +3,13 @@
     android:id="@+id/login_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#FFFFFF"
-    android:backgroundTintMode="src_in"
+    android:background="@drawable/bckgrd"
     android:orientation="vertical">
 
 
     <ImageView
 
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="66dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/cardio_workout_icon_150073" />
@@ -33,10 +31,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
         android:ems="10"
         android:hint="Email" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <EditText
         android:id="@+id/editText_senhalogin"
@@ -76,10 +78,10 @@
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:layout_marginHorizontal="40dp"/>
+        android:layout_marginHorizontal="40dp"
+        android:visibility="gone" />
     <Button
         android:id="@+id/button_cadastro"
         android:layout_width="match_parent"

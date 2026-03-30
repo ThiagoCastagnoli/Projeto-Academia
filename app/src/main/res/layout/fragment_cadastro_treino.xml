@@ -50,19 +50,5 @@
         android:hint="Selecionar Treino"
         android:layout_margin="20dp"/>
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="152dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Tornar treino publico!" />
-
-    <TextClock
-        android:textSize="40dp"
-        android:layout_margin="20dp"
-        android:id="@+id/textClock"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
 </LinearLayout>
 
