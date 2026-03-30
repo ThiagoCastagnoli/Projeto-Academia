@@ -15,8 +15,8 @@ class TreinosAdapter (val listaTreinos: List<Treino>):
 
     class TreinoViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
-        val textViewTitulo = itemView.findViewById<TextView>(R.id.textview_titulo)
-        val textViewDescricao = itemView.findViewById<TextView>(R.id.textview_descricao)
+        val textViewTitulo = itemView.findViewById<TextView>(R.id.text_titulo_treino)
+        val textViewDescricao = itemView.findViewById<TextView>(R.id.text_descricao_treino)
     }
 
 

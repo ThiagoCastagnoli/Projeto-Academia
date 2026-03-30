@@ -32,6 +32,9 @@
         android:name="com.example.myapplication.Fragments.HomepageFragment"
         android:label="HomepageFragment" >
         <action
+            android:id="@+id/action_homepageFragment_to_loginFragment"
+            app:destination="@+id/loginFramgment" />
+        <action
             android:id="@+id/action_homepageFragment_to_cadastrarTreinoFragment"
             app:destination="@id/cadastrarTreinoFragment" />
         <argument
