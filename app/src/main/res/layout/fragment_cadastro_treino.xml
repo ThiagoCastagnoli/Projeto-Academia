@@ -17,7 +17,7 @@
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:layout_marginTop="8dp"
-            android:src="@drawable/cardio_workout_icon_150073"
+            android:src="@drawable/logo_metafit"
             android:contentDescription="Ícone treino" />
 
         <TextView
@@ -103,11 +103,13 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
+                    android:background="@drawable/primari_buttons"
                     android:id="@+id/button_cadastrar_treino"
                     android:layout_width="match_parent"
                     android:layout_height="58dp"
                     android:layout_marginTop="24dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@null"
+                    app:backgroundTint="@null"
                     android:text="Cadastrar"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
@@ -115,11 +117,13 @@
                     android:textStyle="bold" />
 
                 <Button
+                    android:background="@drawable/primari_buttons"
                     android:id="@+id/button_listtipos"
                     android:layout_width="match_parent"
                     android:layout_height="58dp"
                     android:layout_marginTop="18dp"
-                   android:backgroundTint="@color/black"
+                   android:backgroundTint="@null"
+                    app:backgroundTint="@null"
                     android:text="Selecionar Treino"
                     android:textAllCaps="false"
                     android:textColor="@color/white"

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="22dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#F7F8FA"
+    app:strokeColor="#E6EAF0"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/imgTreino"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:contentDescription="Ícone do treino"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <TextView
+            android:id="@+id/tvNomeTreino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="12dp"
+            android:text="Treino de Força"
+            android:textColor="#16365C"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/btnIniciar"
+            app:layout_constraintStart_toEndOf="@id/imgTreino"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDescricaoTreino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:text="Aumente sua força com exercícios de musculação intensos."
+            android:textColor="#4C6280"
+            android:textSize="15sp"
+            android:lineSpacingExtra="2dp"
+            app:layout_constraintEnd_toStartOf="@id/btnIniciar"
+            app:layout_constraintStart_toEndOf="@id/imgTreino"
+            app:layout_constraintTop_toBottomOf="@id/tvNomeTreino" />
+
+        <Button
+
+            android:id="@+id/btnIniciar"
+            android:layout_width="140dp"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_botao_iniciar"
+            android:backgroundTint="@null"
+            app:backgroundTint="@null"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="INICIAR ▶"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

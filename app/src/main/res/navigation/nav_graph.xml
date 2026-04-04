@@ -46,6 +46,9 @@
         <argument
             android:name="authKey"
             app:argType="string" />
+        <action
+            android:id="@+id/action_homepageFragment_to_selecionarFragment"
+            app:destination="@id/selecionarFragment" />
     </fragment>
     <fragment
         tools:layout="@layout/fragment_cadastro_treino"
@@ -61,5 +64,12 @@
         android:id="@+id/tiposFragment"
         android:name="com.example.myapplication.Fragments.TiposFragment"
         android:label="TiposFragment" />
+    <fragment
+        android:id="@+id/selecionarFragment"
+        android:name="com.example.myapplication.Fragments.SelecionarFragment"
+        android:label="SelecionarFragment"
+        tools:layout="@layout/fragment_selecionart"/>
 
 </navigation>
+
+

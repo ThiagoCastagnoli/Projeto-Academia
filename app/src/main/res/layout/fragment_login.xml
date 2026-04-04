@@ -20,7 +20,7 @@
             android:layout_height="72dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            android:src="@drawable/cardio_workout_icon_150073"
+            android:src="@drawable/logo_metafit"
             android:contentDescription="Ícone login" />
 
         <TextView
@@ -119,11 +119,13 @@
                 </LinearLayout>
 
                 <Button
+                    android:background="@drawable/primari_buttons"
                     android:id="@+id/button_login"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginTop="22dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@null"
+                    app:backgroundTint="@null"
                     android:text="ENTRAR"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
@@ -140,11 +142,13 @@
                     android:visibility="gone" />
 
                 <Button
+                    android:background="@drawable/primari_buttons"
                     android:id="@+id/button_cadastro"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginTop="16dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@null"
+                    app:backgroundTint="@null"
                     android:text="CADASTRE-SE"
                     android:textAllCaps="false"
                     android:textColor="@color/white"

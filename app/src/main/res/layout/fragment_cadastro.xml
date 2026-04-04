@@ -28,7 +28,7 @@
                 android:layout_height="70dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="12dp"
-                android:src="@drawable/cardio_workout_icon_150073" />
+                android:src="@drawable/logo_metafit" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -155,6 +155,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <Button
+                        android:background="@drawable/primari_buttons"
                         android:id="@+id/button_cadastro"
                         android:layout_width="match_parent"
                         android:layout_height="58dp"
@@ -164,7 +165,8 @@
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:backgroundTint="@color/black"/>
+                        android:backgroundTint="@null"
+                        app:backgroundTint="@null" />
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>

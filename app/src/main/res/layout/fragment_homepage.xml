@@ -27,6 +27,13 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seus Treinos"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,14 +59,17 @@
                 android:textStyle="bold" />
 
             <Button
+                android:background="@drawable/primari_buttons"
                 android:id="@+id/button_logout"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:backgroundTint="@color/black"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null"
                 android:text="Logout"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
+
         </LinearLayout>
 
         <TextView
@@ -74,7 +84,9 @@
     </LinearLayout>
 
     <Button
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@null"
+        app:backgroundTint="@null"
+        android:background="@drawable/bg_botao_iniciar"
         android:id="@+id/button_castrar_treinohome"
         android:layout_width="64dp"
         android:layout_height="64dp"
@@ -112,5 +124,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+
+        android:id="@+id/selecionar_treino"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_botao_iniciar"
+        android:backgroundTint="@null"
+        app:backgroundTint="@null"
+        android:text="Selecionar Treinos"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button_castrar_treinohome"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

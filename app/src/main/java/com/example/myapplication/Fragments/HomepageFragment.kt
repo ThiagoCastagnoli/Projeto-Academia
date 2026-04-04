@@ -32,6 +32,7 @@ class HomepageFragment : Fragment(R.layout.fragment_homepage) {
         val buttoncadastrartreino = view.findViewById<Button>(R.id.button_castrar_treinohome)
         val buttonLogout = view.findViewById<Button>(R.id.button_logout)
         val recyclerview = view.findViewById<RecyclerView>(R.id.Recyclerview)
+        val buttonSelecTreino = view.findViewById<Button>(R.id.selecionar_treino)
 
         val argumentos = HomepageFragmentArgs.fromBundle(requireArguments())
         val userName = argumentos.userName
@@ -39,7 +40,7 @@ class HomepageFragment : Fragment(R.layout.fragment_homepage) {
         recyclerview.layoutManager = LinearLayoutManager(requireContext())
         progressBarTreino.visibility = View.VISIBLE
 
-        textviewbemvidno.text = "Olá $userName, seja bem-vindo!"
+        textviewbemvidno.text = "Olá $userName, seja bem-vindo(a)!"
 
         buttoncadastrartreino.setOnClickListener {
             val action = HomepageFragmentDirections.actionHomepageFragmentToCadastrarTreinoFragment()
@@ -56,6 +57,11 @@ class HomepageFragment : Fragment(R.layout.fragment_homepage) {
             Toast.makeText(requireContext(), "Logout realizado", Toast.LENGTH_SHORT).show()
 
             findNavController().navigate(R.id.action_homepageFragment_to_loginFragment)
+        }
+
+        buttonSelecTreino.setOnClickListener {
+            val action = HomepageFragmentDirections.actionHomepageFragmentToSelecionarFragment()
+            findNavController().navigate(action)
         }
 
         lifecycleScope.launch {
