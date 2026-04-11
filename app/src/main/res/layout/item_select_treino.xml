@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
+    android:id="@+id/card_select"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -28,7 +29,7 @@
              />
 
         <TextView
-            android:id="@+id/tvNomeTreino"
+            android:id="@+id/titulo_select_t"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
@@ -42,7 +43,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvDescricaoTreino"
+            android:id="@+id/sub_titulo_select"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
@@ -54,7 +55,7 @@
             android:lineSpacingExtra="2dp"
             app:layout_constraintEnd_toStartOf="@id/btnIniciar"
             app:layout_constraintStart_toEndOf="@id/imgTreino"
-            app:layout_constraintTop_toBottomOf="@id/tvNomeTreino" />
+            app:layout_constraintTop_toBottomOf="@id/titulo_select_t" />
 
         <Button
 
